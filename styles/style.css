@@ -1,0 +1,87 @@
+@import "blocks/block.css";
+@import "blocks/header.css";
+@import "blocks/content.css";
+@import "blocks/page.css";
+@import "blocks/footer.css";
+@import "blocks/card.css.";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  [class^="page__header"] {
+    background-color: white;
+    width: Fixed (1,440px)px;
+    height: Hug (100px)px;
+    padding: 25px 120px 25px 120px;
+    gap: 10px;
+    opacity: 0px;
+
+  nav {
+      width: Fill (1,200px)px;
+      height: Hug (50px)px;
+      gap: 0px;
+      opacity: 0px;
+  }
+
+  p{
+  width: 62px;
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  }
+    
+    [class^="For Recruiters"] {
+      width: Fixed (145px)px;
+      height: Hug (50px)px;
+      padding: 14px 32px 14px 32px;
+      gap: 10px;
+      border-radius: 100px 0px 0px 0px;
+      opacity: 0px;
+      a{
+        width: 105px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+        color: #121212;
+      }
+    }
+    [class^="Sign Up"] {
+      width: Fixed (145px)px;
+      height: Hug (50px)px;
+      padding: 14px 32px 14px 32px;
+      gap: 10px;
+      opacity: 0px;
+      background: #3D1EDD;
+      a{
+        width: 59px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
+
+    [class^="Log in"] {
+      width: Fixed (145px)px;
+      height: Hug (50px)px;
+      padding: 14px 32px 14px 32px;
+      gap: 10px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      a{
+        width: 46px;
+        height: 22px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
+  }

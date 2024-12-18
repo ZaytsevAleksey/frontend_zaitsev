@@ -46,26 +46,27 @@ header nav a {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 header nav a:hover {
   color: #3D1EDD;
 }
-header nav .Sign-Up {
+header nav .SignUp {
   background-color: #3D1EDD;
   color: #fff;
 }
-header nav .Sign-Up:hover {
+header nav .SignUp:hover {
   background-color: #fff; 
   color: #3D1EDD;
   border: 2px solid #E5DEFD;
 }
-header nav .Log-in {
+header nav .Login {
   background-color: #fff; 
   color: #3D1EDD; 
   border: 2px solid #E5DEFD; 
 }
 
-header nav .Log-in:hover {
+header nav .Login:hover {
   background-color: #3D1EDD; 
   color: #fff;
 }
@@ -95,7 +96,7 @@ header nav .Log-in:hover {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  
+  color: #707070;
 }
 .JoinNow{
   background-color: #3D1EDD;
@@ -108,7 +109,9 @@ header nav .Log-in:hover {
   text-decoration: none
 }
 .JoinNow:hover{
-  background-color: #3D1EDD;
+  background-color: #fff;
+  color: #3D1EDD;
+  border: 2px solid #E5DEFD;
 }
 .content_section_hero p {
   font-size: 1.1rem;
@@ -119,8 +122,13 @@ header nav .Log-in:hover {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: #707070;
 }
-.image1 {
+.Hirenow{
+  text-decoration: none;
+  color: #3D1EDD;
+}
+.image1{
   width:50%;
   height: 900px;
 }
@@ -185,7 +193,7 @@ header nav .Log-in:hover {
   margin-bottom: 30px;
   font-family: Inter;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 15px;
   letter-spacing: -0.04em;
   text-align: center;
   text-underline-position: from-font;
@@ -296,8 +304,6 @@ header nav .Log-in:hover {
   cursor: pointer; 
   margin-top: 20px; 
   text-decoration-skip-ink: none;
-  
-  
   text-decoration: none; 
 }
 
@@ -362,4 +368,78 @@ header nav .Log-in:hover {
 }
 .footer_l{
   padding-left: 78%;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.modal .close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.modal-content form button {
+  background-color: #3D1EDD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.modal-content form button:hover {
+  color:#3D1EDD;
+  background-color: #fff;
+  border: 1px solid #E5DEFD;
 }

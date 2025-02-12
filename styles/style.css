@@ -78,7 +78,7 @@ header nav .Login:hover {
 .content_section_hero h1 {
   font-size: 3.7rem;
   margin-bottom: 70px;
-  font-family: Inter;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 83.2px;
   letter-spacing: -0.04em;
@@ -117,7 +117,7 @@ header nav .Login:hover {
 .content_section_hero p {
   font-size: 1.1rem;
   margin-bottom: 30px;
-  font-family: Inter;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   line-height: 90px;
   text-align: center;
@@ -170,7 +170,7 @@ header nav .Login:hover {
 .content_section_text1 h1{
   font-size: 2.7rem;
   margin-bottom: 20px;
-  font-family: Inter;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: -0.04em;
@@ -181,7 +181,7 @@ header nav .Login:hover {
 .content_section_text1 h2{
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-family: Inter;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 15px;
   letter-spacing: -0.04em;
@@ -192,7 +192,7 @@ header nav .Login:hover {
 .content_section_text1 h3{
   font-size: 1.1rem;
   margin-bottom: 30px;
-  font-family: Inter;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 15px;
   letter-spacing: -0.04em;
@@ -317,14 +317,25 @@ header nav .Login:hover {
   max-width: 100%; 
   height: auto; 
 }
-
-.page__footer_footer {
-  background-color: #fff; 
-  color: #333; 
+.page__footer_footer { 
   padding: 20px 0; 
 }
+.footer_text1{ 
+  color: #333; 
+  padding: 20px 0;
+  font-weight: bold;
+}
+.footer_text2{
+  color: #707070;
+}
+.footer_text3{
+  color: #333; 
+  padding: 20px 0;
+  font-weight: bold;
+}
+
 .footer_r{
-  padding-left: 10%;
+  padding-left: 18%;
 }
 
 .footer_text {
@@ -338,21 +349,13 @@ header nav .Login:hover {
   font-size: 14px; 
   color: #aaa; 
 }
-
-.footer_links {
-  text-align: right; 
-  margin-top: 10px; 
-}
-
 .footer_link {
   color: #333; 
   text-decoration: none; 
-  font-weight: bold; 
+  font-weight: bold;
+  text-align: right;
 }
 
-.footer_link:hover {
-  color: #aaa; 
-}
 .page__footer_footer {
   background-color: #f8f8f8; 
   padding: 20px; 

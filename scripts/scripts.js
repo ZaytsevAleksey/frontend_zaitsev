@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerModal = document.getElementById('registerModal');
     const closeLoginModal = loginModal.querySelector('.close');
     const closeRegisterModal = registerModal.querySelector('.close');
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev-slide');
+    const nextButton = document.querySelector('.next-slide');
+    let currentSlide = 0;
 
 Login.addEventListener('click', function() {
     loginModal.style.display = "block";
@@ -26,5 +31,16 @@ window.addEventListener('click', function(event) {
     if (event.target == registerModal) {
         registerModal.style.display = "none";
     }
-  })
+    function updateSlider() {
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    prevButton.addEventListener('click', function() {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+        updateSlider();
+    });
+    nextButton.addEventListener('click', function() {
+         currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+        updateSlider();
+    });
+});
 });

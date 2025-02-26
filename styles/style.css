@@ -129,17 +129,18 @@ header nav .Login:hover {
   text-decoration: none;
   color: #3D1EDD;
 }
-.image1{
-  width:50%;
-  height: 900px;
-}
-.hero_photo {
+.slider_container {
   position: relative; 
   height: 600px; 
   background-color: black; 
   overflow: hidden; 
 }
-.hero_photo::before{
+.slider {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider_container::before{
   content: "";
   position: absolute;
   bottom: -50px;
@@ -149,7 +150,7 @@ header nav .Login:hover {
   background:linear-gradient(to top, black 50%, white 50%); 
 }
 
-.image1 {
+.slide img {
   position: absolute; 
   top: 40%; 
   left: 50%; 
@@ -157,6 +158,26 @@ header nav .Login:hover {
   max-width: none; 
   width: 60%;
   height: 100%; 
+}
+.slider_nav {
+  position: absolute;
+  top: 50%;
+  left: 390px;
+  right: 390px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.slider_nav button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
 }
 .content_section_text1 {
   background-color: #fff;
@@ -289,8 +310,7 @@ header nav .Login:hover {
   margin-bottom: 10px; 
 }
 .connect h2 {
-  font-size: 0.9rem; 
-  margin-bottom: 10px;
+  font-size: 15px; 
   color: #707070;
 }
 .text h1{
@@ -309,8 +329,9 @@ header nav .Login:hover {
 }
 
 .Join_Now:hover {
-  background-color: #3D1EDD;
-  border: 2px solid #E5DEFD
+  background-color: #fff;
+  color: #3D1EDD;
+  border: 2px solid #E5DEFD;
 }
 
 .image4 {

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('.next-slide');
     let currentSlide = 0;
 
+
 Login.addEventListener('click', function() {
     loginModal.style.display = "block";
 });
@@ -24,23 +25,15 @@ closeRegisterModal.addEventListener('click', function() {
     registerModal.style.display = "none";
 });
 
-window.addEventListener('click', function(event) {
-    if (event.target == loginModal) {
-        loginModal.style.display = "none";
-    }
-    if (event.target == registerModal) {
-        registerModal.style.display = "none";
-    }
-    function updateSlider() {
-        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    prevButton.addEventListener('click', function() {
-        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-        updateSlider();
-    });
-    nextButton.addEventListener('click', function() {
-         currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-        updateSlider();
-    });
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+prevButton.addEventListener('click', function() {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+    updateSlider();
+});
+nextButton.addEventListener('click', function() {
+     currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+    updateSlider();
 });
 });

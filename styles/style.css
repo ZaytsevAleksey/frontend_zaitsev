@@ -279,13 +279,31 @@ header nav .Login:hover {
 .connect {
   max-width: 600px; 
 }
-.features h2 {
-  font-size: 24px; 
-  margin-bottom: 10px; 
+.features h2  {
+  font-size: 25px; 
+  margin-bottom: 10px;
+  display: flex;
+  color:#000000
 }
 .features p {
   font-size: 15px;
   color:#707070;
+}
+.features a  {
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.features hr{
+  width: 366px;
+  height: 6px;
+  color:#F3F3F3;
+  border: 2px solid #ffffff; 
+}
+.features hr:hover{
+  width: 366px;
+  height: 6px;
+  background-color:#3D1EDD;
 }
 
 .content_section_CTA {
@@ -314,6 +332,7 @@ header nav .Login:hover {
   color: #707070;
 }
 .text h1{
+  display: flex; 
   font-size: 40px; 
   margin-bottom: 20px;
 }

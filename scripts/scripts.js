@@ -37,3 +37,7 @@ nextButton.addEventListener('click', function() {
     updateSlider();
 });
 });
+window.addEventListener('load', function() {
+    var preloader = this.document.getElementById('preloader');
+    preloader.style.display = 'none';
+});

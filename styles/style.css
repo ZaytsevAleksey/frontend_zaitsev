@@ -348,13 +348,20 @@ header nav .Login:hover {
 .connect {
   max-width: 600px; 
 }
-.features h2  {
+.features button  {
   font-size: 25px; 
   margin-bottom: 10px;
   display: flex;
-  color:#000000
+  background-color:#ffffff;
+  color:#000000;
+  border: none;
+  cursor: pointer;
 }
-.features p {
+.features button:hover  {
+  color:#3D1EDD;
+  cursor: pointer;
+}
+.features text {
   font-size: 15px;
   color:#707070;
 }
@@ -370,8 +377,6 @@ header nav .Login:hover {
   border: 2px solid #ffffff; 
 }
 .features hr:hover{
-  width: 366px;
-  height: 8px;
   background-color:#3D1EDD;
 }
 
@@ -544,7 +549,7 @@ header nav .Login:hover {
 .modal-content form button {
   background-color: #3D1EDD;
   color: white;
-  border: none;
+  border: none;;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;

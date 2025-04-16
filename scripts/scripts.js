@@ -1,16 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const loginBtn = document.getElementById('Login');
-    const registerBtn = document.getElementById('SignUp');
     const loginModal = document.getElementById('loginModal');
     const registerModal = document.getElementById('registerModal');
     const closeLoginModal = loginModal.querySelector('.close');
     const closeRegisterModal = registerModal.querySelector('.close');
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.querySelector('.prev-slide');
-    const nextButton = document.querySelector('.next-slide');
-    let currentSlide = 0;
-
+    const modalWindow = document.querySelector('.modal');
 
 Login.addEventListener('click', function() {
     loginModal.style.display = "block";
@@ -24,17 +17,12 @@ closeLoginModal.addEventListener('click', function() {
 closeRegisterModal.addEventListener('click', function() {
     registerModal.style.display = "none";
 });
-
-function updateSlider() {
-    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
-prevButton.addEventListener('click', function() {
-    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
-    updateSlider();
-});
-nextButton.addEventListener('click', function() {
-     currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
-    updateSlider();
+modalWindow.addEventListener('click', (e) => {
+    if (e.target === modalWindow) {
+       modalWindow.classList.add('hide');
+       modalWindow.classList.remove('show');
+       document.body.style.overflow = '';
+    }
 });
 });
 window.addEventListener('load', function() {

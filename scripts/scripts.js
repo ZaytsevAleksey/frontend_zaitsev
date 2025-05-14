@@ -1,135 +1,153 @@
-function setupModals() {
-    // Регистрация
-    var signupModal = document.getElementById("signupModal");
-    var signUpBtn = document.getElementById("signUpBtn");
-    var closeSignupModal = document.getElementById("closeModal");
-    var signupForm = document.getElementById("signupForm");
-    // Вход
-    var loginModal = document.getElementById("loginModal");
-    var loginBtn = document.querySelector(".log-in");
-    var closeLoginModal = document.getElementById("closeLoginModal");
-    var loginForm = document.getElementById("loginForm");
-    // Открытие модального окна регистрации
-    signUpBtn === null || signUpBtn === void 0 ? void 0 : signUpBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        if (signupModal)
-            signupModal.style.display = "block";
-    });
-    // Закрытие модального окна регистрации
-    closeSignupModal === null || closeSignupModal === void 0 ? void 0 : closeSignupModal.addEventListener("click", function () {
-        if (signupModal)
-            signupModal.style.display = "none";
-    });
-    // Обработка отправки формы регистрации
-    signupForm === null || signupForm === void 0 ? void 0 : signupForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Регистрация успешно выполнена!");
-    });
-    // Открытие модального окна входа
-    loginBtn === null || loginBtn === void 0 ? void 0 : loginBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        if (loginModal)
-            loginModal.style.display = "block";
-    });
-    // Закрытие модального окна входа
-    closeLoginModal === null || closeLoginModal === void 0 ? void 0 : closeLoginModal.addEventListener("click", function () {
-        if (loginModal)
-            loginModal.style.display = "none";
-    });
-    // Обработка отправки формы входа
-    loginForm === null || loginForm === void 0 ? void 0 : loginForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Вход выполнен успешно!");
-    });
-    // Закрытие модальных окон при клике вне них
-    window.addEventListener("click", function (event) {
-        if (event.target === signupModal && signupModal) {
-            signupModal.style.display = "none";
-        }
-        if (event.target === loginModal && loginModal) {
-            loginModal.style.display = "none";
-        }
-    });
-}
-document.addEventListener('DOMContentLoaded', function() {
-    const loginModal = document.getElementById('loginModal');
-    const registerModal = document.getElementById('registerModal');
-    const closeLoginModal = loginModal.querySelector('.close');
-    const closeRegisterModal = registerModal.querySelector('.close');
-    const modalWindow = document.querySelector('.modal');
+document.addEventListener("DOMContentLoaded", function () {
+  //МОДАЛЬНЫЕ ОКНА 
+  var loginModal = document.getElementById("loginModal");
+  var registerModal = document.getElementById("registerModal");
 
-Login.addEventListener('click', function() {
-    loginModal.style.display = "block";
-});
-SignUp.addEventListener('click', function() {
-    registerModal.style.display = "block";
-});
-closeLoginModal.addEventListener('click', function() {
-    loginModal.style.display = "none";
-});
-closeRegisterModal.addEventListener('click', function() {
-    registerModal.style.display = "none";
-});
-modalWindow.addEventListener('click', (e) => {
-    if (e.target === modalWindow) {
-       modalWindow.classList.add('hide');
-       modalWindow.classList.remove('show');
-       document.body.style.overflow = '';
+  var btnLogin = document.getElementById("Login"); 
+  var btnRegister = document.getElementById("SignUp"); 
+
+  var loginForm = document.getElementById("loginForm");
+  var closeLogin = loginModal ? loginModal.querySelector(".close") : null;
+
+  var registerForm = document.getElementById("registerForm");
+  var closeRegister = registerModal ? registerModal.querySelector(".close") : null;
+
+  if (btnLogin) {
+    btnLogin.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (loginModal) {
+        loginModal.style.display = "block";
+      }
+    });
+  }
+
+  if (btnRegister) {
+    btnRegister.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (registerModal) {
+        registerModal.style.display = "block";
+      }
+    });
+  }
+
+  if (closeLogin) {
+    closeLogin.addEventListener("click", function () {
+      if (loginModal) {
+        loginModal.style.display = "none";
+      }
+    });
+  }
+
+  if (closeRegister) {
+    closeRegister.addEventListener("click", function () {
+      if (registerModal) {
+        registerModal.style.display = "none";
+      }
+    });
+  }
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Вход выполнен успешно!");
+      if (loginModal) {
+        loginModal.style.display = "none";
+      }
+    });
+  }
+
+  if (registerForm) {
+    registerForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Регистрация успешно выполнена!");
+      if (registerModal) {
+        registerModal.style.display = "none";
+      }
+    });
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === loginModal) {
+      loginModal.style.display = "none";
     }
-});
-});
+    if (event.target === registerModal) {
+      registerModal.style.display = "none";
+    }
+  });
 
 
-window.addEventListener('load', function() {
-    var preloader = this.document.getElementById('preloader');
-    preloader.style.display = 'none';
-});
+  //СЛАЙДЕР 
+  var slides = document.querySelectorAll(".hero-image");
+  var currentSlide = 0;
+  var totalSlides = slides.length;
 
-
-var currentSlide = 0;
-var slides = document.querySelectorAll('.hero-image');
-var totalSlides = slides.length;
-function showSlide(index) {
+  function showSlide(index) {
     slides.forEach(function (slide, i) {
-        slide.classList.toggle('active', i === index);
+      slide.classList.toggle("active", i === index);
     });
-}
-function changeSlide(direction) {
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  }
+
+  if (totalSlides > 0) {
     showSlide(currentSlide);
-}
-function autoChangeSlide() {
-    changeSlide(1);
-}
-if (totalSlides > 0) {
-    showSlide(currentSlide);
-    setInterval(autoChangeSlide, 3000);
-}
-function generateCards(cards) {
-    var container = document.getElementById('features-container');
-    if (!container) {
-        console.error('Элемент с id "features-container" не найден');
-        return;
+    setInterval(function () {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }, 3000);
+  }
+
+  function updateImage(src) {
+    var imageElement = document.getElementById("infImage");
+    if (imageElement) {
+      imageElement.src = src;
+    } else {
+      console.error('Элемент с id "infImage" не найден.');
     }
+  }
+  window.updateImage = updateImage;
+
+
+  //ГЕНЕРАЦИЯ КАРТОЧЕК 
+  function generateCards(cards) {
+    var featureContainer = document.getElementById("features-container");
+    if (!featureContainer) {
+      console.error('Элемент с id "features-container" не найден');
+      return;
+    }
+
     cards.forEach(function (card) {
-        var _a;
-        var cardHTML = "\n      <div class=\"feature\" onclick=\"updateImage('".concat((_a = card.image) !== null && _a !== void 0 ? _a : '', "')\">\n        <hr class=\"thick-line\">\n        <h3>").concat(card.card_name, "</h3>\n        <p>").concat(card.card_text, "</p>\n      </div>\n    ");
-        container.insertAdjacentHTML('beforeend', cardHTML);
+      var cardHTML = `
+        <div class="feature" onclick="updateImage('${card.image || "img/default.jpg"}')">
+          <hr class="thick-line">
+          <h3>${card.card_name}</h3>
+          <p>${card.card_text}</p>
+        </div>`;
+      featureContainer.insertAdjacentHTML("beforeend", cardHTML);
     });
-}
-// Пример функции updateImage (если она нужна)
-function updateImage(imageUrl) {
-    // Реализуйте логику обновления изображения
-    console.log("Обновить изображение на:", imageUrl);
-}
-// Загрузка данных и генерация карточек
-fetch('https://jsonplaceholder.typicode.com/posts?_limit=3')
-    .then(function (response) { return response.json(); })
+  }
+
+  fetch("https://jsonplaceholder.typicode.com/posts?_limit=3")
+    .then(function (response) {
+      return response.json();
+    })
     .then(function (json) {
-    var cards = json.map(function (comment, index) { return ({
-        card_name: "Comment ".concat(index + 1),
-        card_text: comment.body,
-        // image: comment.image, // если есть поле image
-    }); });
-    generateCards(cards);
+      var cards = json.map(function (post, index) {
+        return {
+          card_name: "Post " + (index + 1),
+          card_text: post.body,
+          image: "img/Frame 1625.svg" 
+        };
+      });
+      generateCards(cards);
+    })
+    .catch(function (error) {
+      console.error("Ошибка при загрузке карточек:", error);
+    });
+});
+
+//ПРЕЛОДЕР
+window.addEventListener("load", function () {
+  var preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.style.display = "none";
+  }
 });

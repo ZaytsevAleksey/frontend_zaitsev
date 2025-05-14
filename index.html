@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobly</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -30,28 +29,18 @@
                     <p> Looking for candidate’s? <a href=" " class="Hirenow">Hire now </a></p>
             </div>
         </section>
-
-        <div class="slider_container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="img/work-5382501_1920-1.jpg" alt="image_1" class="image_1"> 
-                </div>
-                <div class="slide">
-                    <img src="img/nanyat-komandu-razrabotchikov-2.jpg" alt="image_2" class="image_2">
-                </div>
-                <div class="slide">
-                    <img src="img/Rectangle 2.jpg" alt="image_3" class="image_3">
-                </div>
+        <section class=".slider_container">
+            <div class=".slider">
+                <img src="img/work-5382501_1920-1.jpg" alt="Image Slide 1" class="hero-image active">
+                <img src="img/nanyat-komandu-razrabotchikov-2.jpg" alt="Image Slide 2" class="hero-image">
+                <img src="img/Rectangle 2.jpg" alt="Image Slide 3" class="hero-image">
             </div>
-            <div class="slider_nav">
-                <button class="prev_slide">&lt;</button>
-                <button class="next_slide">&gt;</button>
-            </div>
-        </div>
+    
+        </section>
         <section class="content_section_text1">
             <div class="container">
                 <div class="photo">
-                    <img src="img/Ellipse 512.svg" alt="image" class="image2">
+                    <img src="img/Ellipse 512.svg" alt="photo_avatar" class="image2">
                 </div>
             <blockquote>
             <h1> Creating an Online Presence is Hard.<br> Jobly Makes it Easy for Recruiters to See you</h1>
@@ -65,9 +54,18 @@
         </section>
 
         <section class="content_section_forms">
-            <div class = "container">
-                <h1>Everything you want to know in one place.</h1>
-            <img src="img/Frame 1625.svg" alt="forms image" class="forms-image">
+            <div class="container">
+                 <h1>Everything you want to know in one place.</h1>
+                 <img id="infImage" src="img/professional-profile.png" alt="Info Image" class="inf-image">
+                 <div class="features" id="features-container"></div>
+            </div>
+        </section>
+        <script>
+        function updateImage(src) {
+        document.getElementById("infoImage").src = src;
+        }
+        </script>
+
             <div class="features">
                 <div class="feature">
                     <hr>
@@ -86,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
         <section class="content_section_text2">
             <div class="container">
@@ -109,7 +107,7 @@
         </section>
     </main>
 
-    <footer class="page__footer_footer">
+    <footer class="page__footer">
         <div class="footer_r">
             <p class="footer_text1">Jobly.co</p><br>
             <p class="footer_text2">We support a pool of diverse young creatives and engineers.</p><br>
@@ -145,7 +143,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
 </body>

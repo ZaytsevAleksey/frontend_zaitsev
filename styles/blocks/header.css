@@ -1,0 +1,49 @@
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+header .container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+header .log {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+}
+header nav a {
+  margin-left: 20px;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header nav a:hover {
+  color: #3D1EDD;
+}
+header nav .SignUp {
+  background-color: #3D1EDD;
+  color: #fff;
+}
+header nav .SignUp:hover {
+  background-color: #fff; 
+  color: #3D1EDD;
+  border: 2px solid #E5DEFD;
+}
+header nav .Login {
+  background-color: #fff; 
+  color: #3D1EDD; 
+  border: 2px solid #E5DEFD; 
+}
+
+header nav .Login:hover {
+  background-color: #3D1EDD; 
+  color: #fff;
+}

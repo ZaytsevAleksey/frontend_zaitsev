@@ -1,0 +1,241 @@
+.content_section_hero {
+  text-align: center;
+}
+
+.content_section_hero h1 {
+  font-size: 3.7rem;
+  margin-bottom: 70px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  line-height: 83.2px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.content_section_hero h2{
+  font-size: 2.5rem;
+  margin-bottom: 90px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #707070;
+}
+.JoinNow{
+  background-color: #3D1EDD;
+  color: #fff;
+  width: Fixed (145px)px;
+  height: Hug (50px)px;
+  padding: 14px 32px 14px 32px;
+  gap: 10px;
+  opacity: 0px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.JoinNow:hover{
+  background-color: #fff;
+  color: #3D1EDD;
+  border: 2px solid #E5DEFD;
+}
+.content_section_hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 90px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #707070;
+}
+.Hirenow{
+  text-decoration: none;
+  color: #3D1EDD;
+}
+.content_section_text1 {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.content_section_text1 blockquote {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.content_section_text1 h1{
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.content_section_text1 h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.content_section_text1 h3{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#707070;
+}
+.photo{
+  align-items: center;
+  margin-top: 50px;
+}
+.image2{
+  position: center;
+  width: 59.46px;
+  height: 59.46px;
+  gap: 0px;
+  opacity: 0px;
+  
+}
+
+.content_section_forms {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.content_section_forms h1 {
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+}
+
+.forms-image {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.feature {
+  width: 30%;
+  text-align: left;
+}
+
+.content_section_text2 {
+  margin-top: 40px;
+  margin-bottom: 40px; 
+}
+
+.content_section_text2 .container {
+  display: flex; 
+  align-items: center; 
+}
+
+.image3 {
+  max-width: 100%; 
+  height: auto; 
+  margin-right: 10%; 
+}
+.connect {
+  max-width: 600px; 
+}
+.features button  {
+  font-size: 25px; 
+  margin-bottom: 10px;
+  display: flex;
+  background-color:#ffffff;
+  color:#000000;
+  border: none;
+  cursor: pointer;
+}
+.features button:hover  {
+  color:#3D1EDD;
+  cursor: pointer;
+}
+.features text {
+  font-size: 15px;
+  color:#707070;
+}
+.features a {
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.features hr{
+  width: 366px;
+  height: 8px;
+  background-color:#dad7d7a9;
+  border: 2px solid #ffffff; 
+}
+.features hr:hover{
+  background-color:#3D1EDD;
+}
+
+.content_section_CTA {
+  background-color: #000; 
+  color: #fff; 
+  padding: 0px 0; 
+  margin-top: 40px; 
+}
+
+.content_section_CTA .container {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.text {
+  max-width: 400px; 
+}
+
+.connect h1 {
+  font-size: 2.1rem; 
+  margin-bottom: 10px; 
+}
+.connect h2 {
+  font-size: 15px; 
+  color: #707070;
+}
+.text h1{
+  display: flex; 
+  font-size: 40px; 
+  margin-bottom: 20px;
+}
+.Join_Now {
+  background-color: #3D1EDD; 
+  color: #fff;
+  padding: 14px 32px 14px 32px; 
+  border: none; 
+  cursor: pointer; 
+  margin-top: 20px; 
+  text-decoration-skip-ink: none;
+  text-decoration: none; 
+}
+
+.Join_Now:hover {
+  background-color: #fff;
+  color: #3D1EDD;
+  border: 2px solid #E5DEFD;
+}
+
+.image4 {
+  max-width: 100%; 
+  height: auto; 
+}

@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return {
           card_name: "Post " + (index + 1),
           card_text: post.body,
-          image: "img/Frame 1625.svg" 
+          image: "img/Frame 1625.jpg" 
         };
       });
       generateCards(cards);

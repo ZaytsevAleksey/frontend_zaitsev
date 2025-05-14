@@ -1,26 +1,28 @@
 .slider_container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-height: 600px; 
-  margin: 0 auto; 
+    position: relative;
+    height: 600px;
+    background-color: black;
+    margin-top: 50px;
 }
-
 .slider {
-  position: relative;
-  width: 100%;
+    position: relative;
+    height: 100%;
 }
 
 .hero-image {
-  width: 100%;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: none;
+    width: 60%;
+    height: 600px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .hero-image.active {
-  display: block;
-  opacity: 1;
+    opacity: 1;
 }
 
 button.prev,

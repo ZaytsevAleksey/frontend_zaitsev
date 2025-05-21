@@ -1,8 +1,8 @@
 .slider_container {
     position: relative;
-    height: 600px;
+    height: 580px;
     background-color: black;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .slider {
     position: relative;
@@ -11,12 +11,12 @@
 
 .hero-image {
     position: absolute;
-    top: -150px;
+    top: -130px;
     left: 50%;
     transform: translate(-50%, 0);
     max-width: none;
-    width: 60%;
-    height: 600px;
+    width: 63%;
+    height: 650px;
     opacity: 0;
     transition: opacity 0.5s ease;
 }

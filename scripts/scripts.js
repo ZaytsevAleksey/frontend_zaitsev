@@ -148,6 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
   var preloader = document.getElementById("preloader");
   if (preloader) {
-    preloader.style.display = "none";
+    setTimeout(function() {
+      preloader.style.display = "none";
+    }, 1500);
   }
 });

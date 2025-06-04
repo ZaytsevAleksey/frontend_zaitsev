@@ -20,6 +20,7 @@ nav a {
 
 .submit:hover {
     background-color: #2b0f9e;
+    cursor: pointer;
 }
 
 .modal {

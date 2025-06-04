@@ -1,3 +1,4 @@
+# различные системные папки и файлы хостингов и операционных систем
 /cgi-bin/
 /awstats/
 /webstat/
@@ -13,6 +14,3 @@ bower_components
 .grunt
 .npm
 .env
-node_modules/
-scripts/main.js
-scripts/main.js.map

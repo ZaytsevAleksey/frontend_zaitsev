@@ -1,19 +1,15 @@
 {
-
   "compilerOptions": {
 
     "target": "es2016",
 
-    "allowJs": true,
-
-    "checkJs": true,
+    "module": "amd",       // или "system"
 
     "sourceMap": true,
 
     "outFile": "scripts/main.js"
 
   },
-
+  
   "include": ["ts/**/*"]
-
 }

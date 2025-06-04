@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach(function (card) {
       var cardHTML = `
-        <div class="feature" onclick="updateImage('${card.image || "img/default.jpg"}')">
+        <div class="feature" onclick="updateImage('${card.image || "img/Frame 1625.jpg"}')">
           <hr class="thick-line">
           <h3>${card.card_name}</h3>
           <p>${card.card_text}</p>
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (json) {
       var cards = json.map(function (post, index) {
         return {
-          card_name: "Post " + (index + 1),
+          card_name: "Professional Profile " + (index + 1),
           card_text: post.body,
           image: "img/Frame 1625.jpg" 
         };

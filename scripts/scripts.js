@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //МОДАЛЬНЫЕ ОКНА 
   var loginModal = document.getElementById("loginModal");
   var registerModal = document.getElementById("registerModal");
 
@@ -75,8 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-
-  //СЛАЙДЕР 
   var slides = document.querySelectorAll(".hero-image");
   var currentSlide = 0;
   var totalSlides = slides.length;
@@ -105,8 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   window.updateImage = updateImage;
 
-
-  //ГЕНЕРАЦИЯ КАРТОЧЕК 
   function generateCards(cards) {
     var featureContainer = document.getElementById("features-container");
     if (!featureContainer) {
@@ -144,7 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//ПРЕЛОДЕР
 window.addEventListener("load", function () {
   var preloader = document.getElementById("preloader");
   if (preloader) {
